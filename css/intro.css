@@ -1,0 +1,11 @@
+.intro {
+  grid-area: intro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sub-heading-p {
+  align-self: center;
+  max-width: 65%;
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  background-size: cover;
+  display: grid;
+  grid-template-areas:"intro intro"
+                      "article sb-right"
+                      "footer footer";
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: 450px 1fr 100px;
+  min-height: 100vh;
+}
+
+.flex-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 999px) {
+  .wrapper {
+    grid-template-areas:"intro"
+                        "article"
+                        "sb-right"
+                        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: max-content 1fr max-content 100px;
+  }
+}

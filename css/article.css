@@ -1,0 +1,35 @@
+.article {
+  grid-area: article;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.art-flex-cont {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: stretch;
+  justify-content: space-between;
+  background: white;
+}
+
+.review-container {
+  margin-top: 10px;
+  text-align: left;
+  border-top: 1px solid rgba(102, 102, 102, 0.43);
+  padding-top: 20px;
+}
+
+.review-container:after{
+  display: block;
+  content: ' ';
+  clear: both;
+}
+
+@media (max-width: 999px) {
+ .article{
+   padding: 0px;
+ }
+}
